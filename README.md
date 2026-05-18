@@ -21,7 +21,7 @@ def evaluar_jornada_laboral(matriz_recursos):
     return RESULTADOS
 
 if __name__ == "__main__":
-    print("--- SISTEMA DE CONTROL DE HORAS LABORALES ---")
+    print("SISTEMA DE CONTROL DE HORAS LABORALES")
     
     
     control_horas = [
@@ -36,9 +36,8 @@ if __name__ == "__main__":
     
     
     print("\nREPORTE SEMANAL DE JORNADAS:")
-    print(f"{'Nombre del Recurso':<20} | {'Total Horas':<12} | {'Clasificación'}")
+    print(f"{'Nombre del Recurso':<20}  {'Total Horas':<12}  {'Clasificación'}")
     print("-" * 55)
     
     for registro in reporte_final:
-        print(f"{registro[0]:<20} | {registro[1]:<12} | {registro[2]}")
-        
+        print(f"{registro[0]:<20}  {registro[1]:<12}  {registro[2]}")
